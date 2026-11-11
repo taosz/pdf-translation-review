@@ -43,6 +43,8 @@ Page numbers refer to positions in each PDF, not necessarily printed page labels
 
 ## Example and web option
 
+Try the [technical datasheet review exercise](examples/technical-datasheet.md) to inspect an actual English-to-Spanish output, including known errors.
+
 Scanfile's developer maintains this project. For an actual one-page example, download the [image-only English original](https://scanfile.online/samples/pdf/scanned-en-pt/reading-brief.en.pdf) and [Portuguese output](https://scanfile.online/samples/pdf/scanned-en-pt/reading-brief.pt.pdf), then compare them. The output is one real example, not evidence of quality on other files; inspect the actual wording and layout yourself.
 
 For a browser view without installing Python, the [Scanfile PDF review reader](https://scanfile.online/tools/pdf-translator?sf_campaign=github_pdf_review#compare-pdf-translation) opens two selected PDFs locally and lets you select pages independently. The link includes a fixed campaign label for privacy-conscious aggregate analytics; no filename or document content is included. Its web analytics follow your browser privacy settings. Scanfile's separate translation service requires a file upload and follows its displayed trial and credit rules; this command-line tool does neither.
