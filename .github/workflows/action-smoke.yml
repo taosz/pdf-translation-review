@@ -1,0 +1,45 @@
+name: Action smoke test
+on:
+  push:
+    paths:
+      - action.yml
+      - pdf_review.py
+      - .github/workflows/action-smoke.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Create fictional inputs
+        shell: bash
+        run: |
+          python -m pip install 'pypdf==6.21.4'
+          python - <<'PY'
+          from pypdf import PdfWriter
+          for name, count in [('source.pdf', 3), ('translated.pdf', 2)]:
+              w = PdfWriter()
+              for _ in range(count): w.add_blank_page(width=612, height=792)
+              w.write(name)
+          PY
+      - uses: ./
+        with:
+          original: source.pdf
+          translation: translated.pdf
+          output: paired.pdf
+          source-start: '2'
+          pages: '2'
+      - name: Verify result
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pypdf import PdfReader
+          pages = PdfReader('paired.pdf').pages
+          assert len(pages) == 2 and float(pages[0].mediabox.width) == 1224
+          PY
+
