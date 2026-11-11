@@ -12,7 +12,7 @@ The example above uses a fictional English reading brief and one actual Scanfile
 
 ## Setup
 
-Install Python 3.10 or later. Download the wheel from the project's [Releases](https://github.com/taosz/pdf-translation-review/releases) page, then install it from your terminal:
+Install Python 3.10 or later. Download the wheel from the [CLI v0.1.0 release](https://github.com/taosz/pdf-translation-review/releases/tag/v0.1.0), then install it from your terminal:
 
 ```sh
 python -m pip install scanfile_pdf_translation_review-0.1.0-py3-none-any.whl
