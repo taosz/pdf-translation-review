@@ -10,7 +10,7 @@ O exemplo mostra um documento fictício em inglês e uma tradução real para po
 
 ## Instalação
 
-Instale Python 3.10 ou mais recente. Baixe o arquivo wheel na página de [versões do projeto](https://github.com/taosz/pdf-translation-review/releases) e execute no terminal:
+Instale Python 3.10 ou mais recente. Baixe o arquivo wheel na [versão 0.1.0 da linha de comando](https://github.com/taosz/pdf-translation-review/releases/tag/v0.1.0) e execute no terminal:
 
 ```sh
 python -m pip install scanfile_pdf_translation_review-0.1.0-py3-none-any.whl
@@ -31,6 +31,12 @@ pdf-translation-review original.pdf traduzido.pdf -o revisao.pdf --source-start 
 ```
 
 Os números indicam posições nos arquivos PDF, que podem ser diferentes da numeração impressa. O caminho de saída deve ser novo: a ferramenta não sobrescreve arquivos. A cópia pode conter todo o conteúdo dos dois documentos; proteja-a como protege os originais e use apenas arquivos que você tem autorização para processar.
+
+## Usar no GitHub Actions
+
+O projeto também oferece uma [Action para gerar a cópia de revisão](https://github.com/taosz/pdf-translation-review#use-in-github-actions) em um runner Linux com Python. O exemplo e os nomes dos parâmetros estão em inglês. A Action instala a dependência, usa dois PDFs presentes no workspace e não envia arquivos ao Scanfile nem traduz ou verifica o conteúdo. A revisão continua sendo manual.
+
+O exemplo inclui uma etapa **opcional** para enviar o PDF resultante como artefato ao GitHub. Essa cópia contém os dois documentos: verifique as regras de acesso e retenção do repositório antes de usá-la. Sem essa etapa, o arquivo não fica disponível para download após o término de um runner hospedado. Use somente documentos que você tem autorização para processar.
 
 ## Limitações
 
