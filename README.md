@@ -1,5 +1,7 @@
 # PDF translation review: original beside translation
 
+[Leia em português do Brasil](README.pt-BR.md)
+
 Create a two-column PDF for **manual review** from an original PDF and a translated PDF. The original appears on the left, the translation on the right. Everything runs on your computer: the program does not upload files or call a translation service. It works with translations from any source.
 
 ![An authored English scan and its actual Portuguese translation arranged side by side.](assets/example.png)
