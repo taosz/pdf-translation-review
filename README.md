@@ -34,6 +34,38 @@ pdf-translation-review original.pdf translated.pdf -o review.pdf --source-start 
 
 Page numbers refer to positions in each PDF, not necessarily printed page labels. The output path must be new; the tool does not overwrite an existing file. Review copies may contain the full contents of both documents. Handle the output with the same care as the inputs, and only process files you are allowed to use.
 
+## Use in GitHub Actions
+
+You can create a review copy in a Linux workflow after checking out a repository containing both PDFs. The action requires Python 3.10 or newer, installs a pinned version of pypdf, and runs the same review code on the runner. It needs no Scanfile account, API key, or additional GitHub permissions. The comparison is manual; the action does not translate or verify the files.
+
+```yaml
+name: Create translation review
+on: [workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: taosz/pdf-translation-review@27b431ef1227bd913d41c803b0b1fda833f31ebd
+        with:
+          original: docs/original.pdf
+          translation: docs/translated.pdf
+          output: review.pdf
+          # Optional: source-start, translation-start, pages
+      - uses: actions/upload-artifact@v4
+        with:
+          name: translation-review
+          path: review.pdf
+          retention-days: 1
+```
+
+Replace the example paths with authorized files. The action itself creates a file on the runner and does not upload it; the final, optional step explicitly uploads the review copy to GitHub so it can be downloaded from the run. The copy contains both documents. Check your repository's artifact access and retention settings before adding that step, and do not upload confidential documents unless your organization permits it. On a hosted runner, omitting that step leaves no downloadable artifact after the job ends. The PDF dependency installation contacts its package index. A successful run only means a copy was created: inspect the output and verify translation manually. Avoid privileged workflows that process untrusted pull-request content.
+
 ## Limits
 
 - Each input must be an unencrypted PDF, at most 50 MiB and 200 pages. Password-protected PDFs are not supported.
