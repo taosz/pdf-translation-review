@@ -27,5 +27,5 @@ The Spanish result has not been independently reviewed by a native speaker. This
 
 ## Browser alternative
 
-For local side-by-side viewing without installing Python, the [Scanfile PDF review reader](https://scanfile.online/tools/pdf-translator#compare-pdf-translation) can display files in the browser. This comparison interface is available in English and Brazilian Portuguese. Scanfile's online translation service is separate, uploads the selected document, and uses its displayed trial and credit rules. Scanfile's developer maintains this repository.
+For local side-by-side viewing without installing Python, the [Scanfile PDF review reader](https://scanfile.online/tools/pdf-translator?sf_campaign=github_pdf_review#compare-pdf-translation) can display files in the browser. This comparison interface is available in English and Brazilian Portuguese. The link includes a fixed campaign label for aggregate analytics; it contains no filename or document content, and analytics follow browser privacy settings. Scanfile's online translation service is separate, uploads the selected document, and uses its displayed trial and credit rules. Scanfile's developer maintains this repository.
 
