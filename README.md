@@ -10,24 +10,24 @@ The example above uses a fictional English reading brief and one actual Scanfile
 
 ## Setup
 
-Install Python 3.10 or later. In a terminal in this folder:
+Install Python 3.10 or later. Download the wheel from the project's [Releases](https://github.com/taosz/pdf-translation-review/releases) page, then install it from your terminal:
 
 ```sh
-python -m pip install -r requirements.txt
+python -m pip install scanfile_pdf_translation_review-0.1.0-py3-none-any.whl
 ```
 
-Installing the dependency requires an internet connection. The review command itself works offline. The only runtime dependency is [pypdf](https://pypdf.readthedocs.io/).
+Run that command from the directory containing the downloaded wheel, or supply its full path. Installing the dependency requires an internet connection. The review command itself works offline. The only runtime dependency is [pypdf](https://pypdf.readthedocs.io/). To run from a source checkout instead, install `requirements.txt` and replace `pdf-translation-review` in the examples with `python pdf_review.py`.
 
 ## Make a review copy
 
 ```sh
-python pdf_review.py original.pdf translated.pdf -o review.pdf
+pdf-translation-review original.pdf translated.pdf -o review.pdf
 ```
 
 Both files need the same number of pages for the default command. For a translation covering original pages 8–10, where the translation starts at its own page 1:
 
 ```sh
-python pdf_review.py original.pdf translated.pdf -o review.pdf --source-start 8 --translation-start 1 --pages 3
+pdf-translation-review original.pdf translated.pdf -o review.pdf --source-start 8 --translation-start 1 --pages 3
 ```
 
 Page numbers refer to positions in each PDF, not necessarily printed page labels. The output path must be new; the tool does not overwrite an existing file. Review copies may contain the full contents of both documents. Handle the output with the same care as the inputs, and only process files you are allowed to use.

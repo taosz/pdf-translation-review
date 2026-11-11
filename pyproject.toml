@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scanfile-pdf-translation-review"
+version = "0.1.0"
+description = "Create a local two-column PDF for manual translation review"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["pypdf>=5.8,<7"]
+keywords = ["pdf", "translation", "review", "bilingual", "offline"]
+
+[project.urls]
+Source = "https://github.com/taosz/pdf-translation-review"
+"Optional browser reader" = "https://scanfile.online/tools/pdf-translator?sf_campaign=github_pdf_review#compare-pdf-translation"
+
+[project.scripts]
+pdf-translation-review = "pdf_review:main"
+
+[tool.setuptools]
+py-modules = ["pdf_review"]
