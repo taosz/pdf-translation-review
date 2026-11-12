@@ -75,7 +75,7 @@ Replace the example paths with authorized files. The action itself creates a fil
 
 ## Example and web option
 
-Try the [technical datasheet review exercise](examples/technical-datasheet.md) to inspect an actual English-to-Spanish output, including known errors.
+Try the [technical datasheet review exercise](examples/technical-datasheet.md) to inspect an actual English-to-Spanish output, including known errors. [Ejercicio en español](examples/technical-datasheet.es.md).
 
 For a no-install first look, try the [fictional bilingual example in the Hugging Face reader](https://huggingface.co/spaces/zsoat/pdf-translation-review). That practice text is invented and is not a Scanfile translation or a quality benchmark; the separate reader also lets you open your own files locally.
 
