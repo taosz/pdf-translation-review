@@ -18,6 +18,14 @@ python -m pip install scanfile_pdf_translation_review-0.1.0-py3-none-any.whl
 
 Execute o comando na pasta que contém o wheel ou informe o caminho completo. A instalação da dependência requer internet; o comando de revisão funciona sem conexão. A única dependência de execução é [pypdf](https://pypdf.readthedocs.io/). Para usar o código-fonte em vez do wheel, instale `requirements.txt` e substitua `pdf-translation-review` por `python pdf_review.py` nos exemplos.
 
+Se o Git estiver instalado, você também pode instalar a mesma versão marcada diretamente do GitHub:
+
+```sh
+python -m pip install 'git+https://github.com/taosz/pdf-translation-review.git@v0.1.0'
+```
+
+Essa instalação acessa o GitHub e o índice de pacotes Python configurado para obter dependências de compilação e o pypdf; não exige conta no Scanfile. No Prompt de Comando do Windows, use aspas duplas no lugar das aspas simples. Um ambiente virtual mantém a instalação separada de outros projetos Python.
+
 ## Criar uma cópia para revisão
 
 ```sh

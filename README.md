@@ -24,6 +24,14 @@ python -m pip install scanfile_pdf_translation_review-0.1.0-py3-none-any.whl
 
 Run that command from the directory containing the downloaded wheel, or supply its full path. Installing the dependency requires an internet connection. The review command itself works offline. The only runtime dependency is [pypdf](https://pypdf.readthedocs.io/). To run from a source checkout instead, install `requirements.txt` and replace `pdf-translation-review` in the examples with `python pdf_review.py`.
 
+Alternatively, if Git is installed, install the same tagged version directly from GitHub:
+
+```sh
+python -m pip install 'git+https://github.com/taosz/pdf-translation-review.git@v0.1.0'
+```
+
+This source installation contacts GitHub and your configured Python package index for build dependencies and pypdf. It does not require a Scanfile account. On Windows Command Prompt, use double quotes instead of single quotes. Use a virtual environment if you want to keep the installation separate from other Python projects.
+
 ## Make a review copy
 
 ```sh
