@@ -2,7 +2,7 @@
 
 Research workflow: [review a translated PDF alongside its Zotero attachment](examples/zotero-research-paper.md). This is a manual workflow, not a Zotero plugin.
 
-Practice: [German-to-English PDF review exercise](examples/german-english-review.md), with a fictional source and a hand-written reference rendering.
+Practice: [Searchable text in a historical PDF translation](examples/searchable-pdf.md) · [German-to-English PDF review exercise](examples/german-english-review.md), with a fictional source and a hand-written reference rendering.
 
 [Leia em português do Brasil](README.pt-BR.md)
 
@@ -96,3 +96,4 @@ Scanfile's developer maintains this project. For an actual one-page example, dow
 For a browser view without installing Python, the [Scanfile PDF review reader](https://scanfile.online/tools/pdf-translator?sf_campaign=github_pdf_review#compare-pdf-translation) opens two selected PDFs locally and lets you select pages independently. The link includes a fixed campaign label for privacy-conscious aggregate analytics; no filename or document content is included. Its web analytics follow your browser privacy settings. Scanfile's separate translation service requires a file upload and follows its displayed trial and credit rules; this command-line tool does neither.
 
 Use an original and translation you are authorized to process. Translation for official or high-stakes use may require qualified human review or certification.
+
