@@ -87,6 +87,8 @@ Replace the example paths with authorized files. The action itself creates a fil
 
 ## Example and web option
 
+Starting with a Word document? [Compare editable Word translation and a PDF reading workflow](https://scanfile.online/guides/translate-word-document) before exporting. Scanfile does not currently translate DOC or DOCX files; exporting to PDF produces a PDF rather than an editable Word result. The guide is maintained by Scanfile's developer.
+
 Try the [technical datasheet review exercise](examples/technical-datasheet.md) to inspect an actual English-to-Spanish output, including known errors. [Ejercicio en español](examples/technical-datasheet.es.md).
 
 For a no-install first look, try the [fictional bilingual example in the Hugging Face reader](https://huggingface.co/spaces/zsoat/pdf-translation-review). That practice text is invented and is not a Scanfile translation or a quality benchmark; the separate reader also lets you open your own files locally.
