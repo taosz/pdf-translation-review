@@ -1,6 +1,6 @@
 # Revisão de tradução em PDF: original ao lado da tradução
 
-Para revisar visualmente sem instalar, [abra o leitor em português no navegador](https://taosz.github.io/pdf-translation-review/pt-br.html). Os PDFs escolhidos são lidos no navegador; GitHub Pages e jsDelivr recebem requisições para carregar o aplicativo e o PDF.js. O leitor não gera um PDF combinado nem traduz; seu exemplo é fictício e não é um resultado do Scanfile. O código adapta o [leitor do Hugging Face](https://huggingface.co/spaces/zsoat/pdf-translation-review), distribuído sob licença MIT.
+Para revisar visualmente sem instalar, [abra o leitor em português no navegador](https://taosz.github.io/pdf-translation-review/pt-br.html). Os PDFs escolhidos são lidos no navegador; o GitHub Pages recebe requisições para carregar o aplicativo e o código PDF.js hospedado junto à página. O leitor não gera um PDF combinado nem traduz; seu exemplo é fictício e não é um resultado do Scanfile. O código adapta o [leitor do Hugging Face](https://huggingface.co/spaces/zsoat/pdf-translation-review), distribuído sob licença MIT.
 
 Crie um PDF em duas colunas para **revisão manual**, a partir de um PDF original e de outro traduzido. O original fica à esquerda e a tradução à direita. O programa funciona no seu computador: ele não envia arquivos nem chama um serviço de tradução. Você pode usá-lo com traduções de qualquer origem.
 
