@@ -6,6 +6,8 @@ Practice: [Searchable text in a historical PDF translation](examples/searchable-
 
 [Leia em português do Brasil](README.pt-BR.md)
 
+For a no-install visual review, [open the browser reader](https://taosz.github.io/pdf-translation-review/). It reads selected PDFs locally, while GitHub Pages and jsDelivr receive requests for the app and PDF.js. It does not generate a combined PDF or translate; its example is invented and is not a Scanfile result. The browser code adapts the existing MIT-licensed [Hugging Face reader](https://huggingface.co/spaces/zsoat/pdf-translation-review).
+
 Create a two-column PDF for **manual review** from an original PDF and a translated PDF. The original appears on the left, the translation on the right. Everything runs on your computer: the program does not upload files or call a translation service. It works with translations from any source.
 
 ![An authored English scan and its actual Portuguese translation arranged side by side.](assets/example.png)
