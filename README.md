@@ -4,7 +4,7 @@ Research workflow: [review a translated PDF alongside its Zotero attachment](exa
 
 Practice: [Searchable text in a historical PDF translation](examples/searchable-pdf.md) · [German-to-English PDF review exercise](examples/german-english-review.md), with a fictional source and a hand-written reference rendering.
 
-[Leia em português do Brasil](README.pt-BR.md)
+[Leia em português do Brasil](README.pt-BR.md) · [Pembaca PDF untuk pemeriksaan terjemahan (Bahasa Indonesia)](https://taosz.github.io/pdf-translation-review/id.html)
 
 For a no-install visual review, [open the browser reader](https://taosz.github.io/pdf-translation-review/). It reads selected PDFs locally, while GitHub Pages and jsDelivr receive requests for the app and PDF.js. It does not generate a combined PDF or translate; its example is invented and is not a Scanfile result. The browser code adapts the existing MIT-licensed [Hugging Face reader](https://huggingface.co/spaces/zsoat/pdf-translation-review).
 
@@ -101,3 +101,5 @@ For a browser view without installing Python, the [Scanfile PDF review reader](h
 
 Use an original and translation you are authorized to process. Translation for official or high-stakes use may require qualified human review or certification.
 
+
+The browser reader bundles PDF.js 4.10.38, distributed under the [Apache License 2.0](docs/PDFJS-LICENSE.txt). Its code loads from GitHub Pages; selected PDFs are processed in the browser.
